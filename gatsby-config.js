@@ -3,6 +3,7 @@ module.exports = {
 		title: `Raghav Sai`,
 		author: `Raghav Sai`,
 		description: `Raghav Sai's personal site-portfolio-blog.`,
+		siteUrl: `https://raghavsai.netlify.app/`,
 		social: {
 			twitter: `petgoldfish13`,
 		},
