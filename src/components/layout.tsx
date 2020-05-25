@@ -1,21 +1,19 @@
-import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
-import styled from "styled-components";
+import React, { FC } from "react";
+import { Link, graphql, PageProps, useStaticQuery } from "gatsby";
 
+import { LayoutQuery } from "../../graphql-types";
 import { rhythm, scale } from "../utils/typography";
 
-function Layout({ children }) {
-	const { site } = useStaticQuery(
-		graphql`
-			query layout {
-				site {
-					siteMetadata {
-						title
-					}
+const Layout: FC = ({ children }) => {
+	const { site }: LayoutQuery = useStaticQuery(graphql`
+		query layout {
+			site {
+				siteMetadata {
+					title
 				}
 			}
-		`
-	);
+		}
+	`);
 
 	const header = (
 		<h1
@@ -37,8 +35,9 @@ function Layout({ children }) {
 			<Link to="/blog/">Blog</Link>
 		</h1>
 	);
+
 	return (
-		<Wrapper>
+		<div>
 			<div
 				style={{
 					marginLeft: `auto`,
@@ -50,19 +49,19 @@ function Layout({ children }) {
 				<header>{header}</header>
 				<main>{children}</main>
 			</div>
-			<Footer>© {new Date().getFullYear()} Raghav Sai</Footer>
-		</Wrapper>
+			<footer>© {new Date().getFullYear()} Raghav Sai</footer>
+		</div>
 	);
-}
+};
 
-const Wrapper = styled.div`
-	min-height: 100vh;
-	background-color: Ivory;
-`;
+// const Wrapper = styled.div`
+// 	min-height: 100vh;
+// 	background-color: Ivory;
+// `;
 
-const Footer = styled.footer`
-	text-align: center;
-	margin: 24px;
-`;
+// const Footer = styled.footer`
+// 	text-align: center;
+// 	margin: 24px;
+// `;
 
 export default Layout;
