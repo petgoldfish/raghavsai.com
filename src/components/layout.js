@@ -22,8 +22,7 @@ class Layout extends React.Component {
 				>
 					<Link
 						style={{
-							boxShadow: `none`,
-							textDecoration: `none`,
+							backgroundImage: `none`,
 							color: `inherit`,
 						}}
 						to={location.pathname === blogPath ? `/blog/` : `/`}
@@ -42,8 +41,7 @@ class Layout extends React.Component {
 				>
 					<Link
 						style={{
-							boxShadow: `none`,
-							textDecoration: `none`,
+							backgroundImage: `none`,
 							color: `inherit`,
 						}}
 						to={`/blog/`}
@@ -67,7 +65,7 @@ class Layout extends React.Component {
 					<main>{children}</main>
 				</div>
 				<Footer>
-					© {new Date().getFullYear()}, Built with
+					© {new Date().getFullYear()} Raghav Sai, Built with
 					{` `}
 					<a href="https://www.gatsbyjs.org">Gatsby</a>
 				</Footer>
@@ -78,6 +76,7 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
 	min-height: 100vh;
+	background-color: Ivory;
 `;
 
 const Footer = styled.footer`
