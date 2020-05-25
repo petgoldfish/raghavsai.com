@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Button from "../components/button";
 
 class IndexPage extends React.Component {
 	render() {
@@ -36,9 +35,6 @@ class IndexPage extends React.Component {
 					default starter blog running on Netlify CMS.
 				</p>
 				<p>Now go build something great!</p>
-				<Link to="/blog/">
-					<Button marginTop="35px">Go to Blog</Button>
-				</Link>
 			</Layout>
 		);
 	}
