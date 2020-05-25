@@ -10,7 +10,7 @@
 		"babel-plugin-styled-components": "^1.10.0",
 		"gatsby": "^2.3.25",
 		"gatsby-image": "^2.0.39",
-		"gatsby-plugin-feed-mdx": "^1.0.0",
+		"gatsby-plugin-graphql-codegen": "^2.7.1",
 		"gatsby-plugin-manifest": "^2.0.29",
 		"gatsby-plugin-mdx": "^1.0.52",
 		"gatsby-plugin-netlify-cms": "^4.0.0",
@@ -36,8 +36,7 @@
 		"typeface-merriweather": "0.0.72",
 		"typeface-montserrat": "0.0.54",
 		"typography": "^0.16.19",
-		"typography-theme-ocean-beach": "^0.16.19",
-		"typography-theme-wordpress-2016": "^0.16.19"
+		"typography-theme-ocean-beach": "^0.16.19"
 	},
 	"scripts": {
 		"build": "gatsby build",
