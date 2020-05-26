@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import Layout from "../components/layout";
+import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 
 const IndexPage: FC = () => {
@@ -18,18 +18,17 @@ const IndexPage: FC = () => {
 					`react`,
 				]}
 			/>
-			<h1>
-				Hey people{" "}
-				<span role="img" aria-label="wave emoji">
-					👋
-				</span>
-			</h1>
-			<p>Welcome to your new Gatsby website. You are on your home page.</p>
+			<h1>Hello World!</h1>
 			<p>
-				This starter comes out of the box with styled components and Gatsby's
-				default starter blog running on Netlify CMS.
+				I'm currently living in New York City, pursuing a Master's in Computer
+				Science. Prior to this, I was a Full Stack Software Engineer at
+				PowerSchool.
 			</p>
-			<p>Now go build something great!</p>
+			<p>
+				When I'm not playing around with Web Development or Programming
+				Languages, I'm usually playing video games or doing outdoorsy stuff like
+				traveling the world and hiking!
+			</p>
 		</Layout>
 	);
 };

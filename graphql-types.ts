@@ -2438,7 +2438,6 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___extensions'
   | 'pluginCreator___pluginOptions___gatsbyRemarkPlugins'
   | 'pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve'
-  | 'pluginCreator___pluginOptions___pathToConfigModule'
   | 'pluginCreator___pluginOptions___pathCheck'
   | 'pluginCreator___nodeAPIs'
   | 'pluginCreator___browserAPIs'
@@ -2638,7 +2637,6 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___gatsbyRemarkPlugins___options___showCaptions'
   | 'pluginOptions___gatsbyRemarkPlugins___options___pathPrefix'
   | 'pluginOptions___gatsbyRemarkPlugins___options___withWebp'
-  | 'pluginOptions___pathToConfigModule'
   | 'pluginOptions___pathCheck'
   | 'nodeAPIs'
   | 'browserAPIs'
@@ -2756,7 +2754,6 @@ export type SitePluginPluginOptions = {
   name?: Maybe<Scalars['String']>;
   extensions?: Maybe<Array<Maybe<Scalars['String']>>>;
   gatsbyRemarkPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsGatsbyRemarkPlugins>>>;
-  pathToConfigModule?: Maybe<Scalars['String']>;
   pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
@@ -2765,7 +2762,6 @@ export type SitePluginPluginOptionsFilterInput = {
   name?: Maybe<StringQueryOperatorInput>;
   extensions?: Maybe<StringQueryOperatorInput>;
   gatsbyRemarkPlugins?: Maybe<SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput>;
-  pathToConfigModule?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
 

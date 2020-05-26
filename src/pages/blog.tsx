@@ -1,10 +1,9 @@
 import React, { FC } from "react";
 import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout";
+import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 import { BlogPageQuery } from "../../graphql-types";
-import { rhythm } from "../utils/typography";
 
 interface BlogProps {
 	data: BlogPageQuery;
@@ -16,18 +15,14 @@ function Blog({ data }: BlogProps) {
 	return (
 		<Layout>
 			<SEO title="All posts" />
-			<div style={{ margin: "20px 0 40px" }}>
+			<div>
 				{posts.map(({ node }) => {
 					const title = node.frontmatter.title || node.fields.slug;
 					return (
 						<div key={node.fields.slug}>
-							<h3
-								style={{
-									marginBottom: rhythm(1 / 4),
-								}}
-							>
+							<h2>
 								<Link to={`blog${node.fields.slug}`}>{title}</Link>
-							</h3>
+							</h2>
 							<small>{node.frontmatter.date}</small>
 							<p
 								dangerouslySetInnerHTML={{

@@ -1,0 +1,28 @@
+html {
+	--primary-text: teal;
+	--secondary-text: #01a7c2;
+	--divider-color: #a3bac3;
+	--secondary: #eaebed;
+	--space: 16px;
+	--space-l: 32px;
+	font-family: "Roboto Mono";
+	background-color: var(--secondary);
+}
+
+h1 {
+	color: var(--primary-text);
+}
+
+a {
+	color: var(--secondary-text);
+}
+
+a:hover:not(.site-title__link) {
+	text-decoration: none;
+	background-color: var(--secondary-text);
+	color: var(--secondary);
+}
+
+hr {
+	color: var(--divider-color);
+}
