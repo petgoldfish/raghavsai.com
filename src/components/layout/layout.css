@@ -7,7 +7,7 @@
 	flex-direction: column;
 }
 
-header {
+.header {
 	display: flex;
 }
 
@@ -27,11 +27,11 @@ header {
 	color: inherit;
 }
 
-main {
+.main {
 	flex: 1;
 }
 
-footer {
+.footer {
 	margin: var(--space);
 	text-align: center;
 }

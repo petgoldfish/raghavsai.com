@@ -30,7 +30,7 @@ a {
 	color: var(--secondary-text);
 }
 
-a:hover:not(.site-title__link) {
+.invert-link:hover {
 	text-decoration: none;
 	background-color: var(--secondary-text);
 	color: var(--secondary);

@@ -18,19 +18,23 @@ const Layout: FC = ({ children }) => {
 
 	return (
 		<div className="wrapper">
-			<header>
+			<header className="header">
 				<h1 className="site-title">
 					<Link className="site-title__link" to="/">
 						{site.siteMetadata.title}
 					</Link>
 				</h1>
 				<div className="navbar">
-					<Link to="/blog/">Blog</Link>
+					<Link className="invert-link" to="/blog/">
+						Blog
+					</Link>
 				</div>
 			</header>
 			<hr />
-			<main>{children}</main>
-			<footer>© {new Date().getFullYear()} Raghav Sai</footer>
+			<main className="main">{children}</main>
+			<footer className="footer">
+				© {new Date().getFullYear()} Raghav Sai
+			</footer>
 		</div>
 	);
 };

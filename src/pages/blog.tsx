@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
+import Bio from "../components/bio/bio";
 import { BlogPageQuery } from "../../graphql-types";
 
 interface BlogProps {
@@ -15,13 +16,16 @@ function Blog({ data }: BlogProps) {
 	return (
 		<Layout>
 			<SEO title="Blog" />
+			<Bio />
 			<div>
 				{posts.map(({ node }) => {
 					const title = node.frontmatter.title || node.fields.slug;
 					return (
 						<div key={node.fields.slug}>
 							<h2>
-								<Link to={`blog${node.fields.slug}`}>{title}</Link>
+								<Link className="invert-link" to={`blog${node.fields.slug}`}>
+									{title}
+								</Link>
 							</h2>
 							<small>{node.frontmatter.date}</small>
 							<p

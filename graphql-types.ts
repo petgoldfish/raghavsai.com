@@ -2129,9 +2129,12 @@ export type SiteEdge = {
 export type SiteFieldsEnum = 
   | 'buildTime'
   | 'siteMetadata___title'
-  | 'siteMetadata___author'
+  | 'siteMetadata___author___name'
+  | 'siteMetadata___author___fullName'
   | 'siteMetadata___description'
   | 'siteMetadata___siteUrl'
+  | 'siteMetadata___social___github'
+  | 'siteMetadata___social___linkedIn'
   | 'siteMetadata___social___twitter'
   | 'port'
   | 'host'
@@ -2813,25 +2816,39 @@ export type SitePluginSortInput = {
 
 export type SiteSiteMetadata = {
   title?: Maybe<Scalars['String']>;
-  author?: Maybe<Scalars['String']>;
+  author?: Maybe<SiteSiteMetadataAuthor>;
   description?: Maybe<Scalars['String']>;
   siteUrl?: Maybe<Scalars['String']>;
   social?: Maybe<SiteSiteMetadataSocial>;
 };
 
+export type SiteSiteMetadataAuthor = {
+  name?: Maybe<Scalars['String']>;
+  fullName?: Maybe<Scalars['String']>;
+};
+
+export type SiteSiteMetadataAuthorFilterInput = {
+  name?: Maybe<StringQueryOperatorInput>;
+  fullName?: Maybe<StringQueryOperatorInput>;
+};
+
 export type SiteSiteMetadataFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
-  author?: Maybe<StringQueryOperatorInput>;
+  author?: Maybe<SiteSiteMetadataAuthorFilterInput>;
   description?: Maybe<StringQueryOperatorInput>;
   siteUrl?: Maybe<StringQueryOperatorInput>;
   social?: Maybe<SiteSiteMetadataSocialFilterInput>;
 };
 
 export type SiteSiteMetadataSocial = {
+  github?: Maybe<Scalars['String']>;
+  linkedIn?: Maybe<Scalars['String']>;
   twitter?: Maybe<Scalars['String']>;
 };
 
 export type SiteSiteMetadataSocialFilterInput = {
+  github?: Maybe<StringQueryOperatorInput>;
+  linkedIn?: Maybe<StringQueryOperatorInput>;
   twitter?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -2853,6 +2870,11 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>;
 };
 
+export type BioQueryVariables = {};
+
+
+export type BioQuery = { avatar?: Maybe<{ childImageSharp?: Maybe<{ fixed?: Maybe<GatsbyImageSharpFixedFragment> }> }>, site?: Maybe<{ siteMetadata?: Maybe<{ author?: Maybe<Pick<SiteSiteMetadataAuthor, 'name' | 'fullName'>>, social?: Maybe<Pick<SiteSiteMetadataSocial, 'github' | 'twitter' | 'linkedIn'>> }> }> };
+
 export type LayoutQueryVariables = {};
 
 
@@ -2861,7 +2883,10 @@ export type LayoutQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMet
 export type SeoQueryVariables = {};
 
 
-export type SeoQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
+export type SeoQuery = { site?: Maybe<{ siteMetadata?: Maybe<(
+      Pick<SiteSiteMetadata, 'title' | 'description'>
+      & { author?: Maybe<Pick<SiteSiteMetadataAuthor, 'fullName'>> }
+    )> }> };
 
 export type BlogPageQueryVariables = {};
 

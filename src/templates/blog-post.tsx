@@ -7,6 +7,7 @@ import SEO from "../components/seo";
 import { BlogPostBySlugQuery } from "../../graphql-types";
 
 import "./blog-post.css";
+import Bio from "../components/bio/bio";
 
 interface BlogPostTemplateProps {
 	data: BlogPostBySlugQuery;
@@ -25,8 +26,11 @@ function BlogPostTemplate({ data }: BlogPostTemplateProps) {
 				<p>{post.frontmatter.date}</p>
 			</div>
 			<MDXRenderer>{post.body}</MDXRenderer>
+			<Bio />
 			<hr />
-			<Link to="/blog/">← All Posts</Link>
+			<Link className="invert-link" to="/blog/">
+				← All Posts
+			</Link>
 		</Layout>
 	);
 }

@@ -1,10 +1,15 @@
 module.exports = {
 	siteMetadata: {
 		title: `Raghav Sai`,
-		author: `Raghav Sai`,
+		author: {
+			name: `Raghav`,
+			fullName: `Raghav Sai`,
+		},
 		description: `Raghav Sai's personal site-portfolio-blog.`,
 		siteUrl: `https://raghavsai.netlify.app/`,
 		social: {
+			github: `petgoldfish`,
+			linkedIn: `graghavsai`,
 			twitter: `petgoldfish13`,
 		},
 	},
