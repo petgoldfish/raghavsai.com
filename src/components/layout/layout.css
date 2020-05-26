@@ -1,13 +1,14 @@
 .wrapper {
 	margin-left: auto;
 	margin-right: auto;
+	min-height: 100vh;
 	max-width: 768px;
-	padding: var(--space);
+	display: flex;
+	flex-direction: column;
 }
 
 header {
 	display: flex;
-	align-content: baseline;
 }
 
 .navbar {
@@ -17,6 +18,7 @@ header {
 }
 
 .site-title {
+	color: var(--brand);
 	flex: 1;
 	font-size: 3.5rem;
 }
@@ -24,6 +26,10 @@ header {
 .site-title__link {
 	text-decoration: none;
 	color: inherit;
+}
+
+main {
+	flex: 1;
 }
 
 footer {

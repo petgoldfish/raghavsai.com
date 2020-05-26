@@ -30,9 +30,7 @@ const Layout: FC = ({ children }) => {
 			</header>
 			<hr />
 			<main>{children}</main>
-			<footer>
-				<small>© {new Date().getFullYear()} Raghav Sai</small>
-			</footer>
+			<footer>© {new Date().getFullYear()} Raghav Sai</footer>
 		</div>
 	);
 };
