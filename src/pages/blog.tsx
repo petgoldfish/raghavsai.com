@@ -14,7 +14,7 @@ function Blog({ data }: BlogProps) {
 
 	return (
 		<Layout>
-			<SEO title="All posts" />
+			<SEO title="Blog" />
 			<div>
 				{posts.map(({ node }) => {
 					const title = node.frontmatter.title || node.fields.slug;
