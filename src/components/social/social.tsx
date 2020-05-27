@@ -32,18 +32,24 @@ export default function Social() {
 			<a
 				className="social-link no-invert"
 				href={`https://www.github.com/${social.github}`}
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				<FontAwesomeIcon icon={faGithub} width={16} />
 			</a>{" "}
 			<a
 				className="social-link no-invert"
 				href={`https://www.linkedin.com/in/${social.linkedIn}`}
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				<FontAwesomeIcon icon={faLinkedin} width={16} />
 			</a>{" "}
 			<a
 				className="social-link no-invert"
 				href={`https://www.twitter.com/${social.twitter}`}
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				<FontAwesomeIcon icon={faTwitter} width={16} />
 			</a>
