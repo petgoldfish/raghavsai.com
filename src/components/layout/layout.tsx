@@ -20,14 +20,12 @@ const Layout: FC = ({ children }) => {
 		<div className="wrapper">
 			<header className="header">
 				<h1 className="site-title">
-					<Link className="site-title__link" to="/">
+					<Link className="site-title__link no-invert" to="/">
 						{site.siteMetadata.title}
 					</Link>
 				</h1>
 				<div className="navbar">
-					<Link className="invert-link" to="/blog/">
-						Blog
-					</Link>
+					<Link to="/blog/">Blog</Link>
 				</div>
 			</header>
 			<hr />

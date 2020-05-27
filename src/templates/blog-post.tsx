@@ -28,9 +28,7 @@ function BlogPostTemplate({ data }: BlogPostTemplateProps) {
 			<MDXRenderer>{post.body}</MDXRenderer>
 			<Bio />
 			<hr />
-			<Link className="invert-link" to="/blog/">
-				← All Posts
-			</Link>
+			<Link to="/blog/">← All Posts</Link>
 		</Layout>
 	);
 }

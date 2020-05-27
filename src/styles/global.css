@@ -22,15 +22,11 @@ body {
 	margin: 0;
 }
 
-h1 {
-	color: var(--primary-text);
-}
-
 a {
 	color: var(--secondary-text);
 }
 
-.invert-link:hover {
+a:hover:not(.no-invert) {
 	text-decoration: none;
 	background-color: var(--secondary-text);
 	color: var(--secondary);
