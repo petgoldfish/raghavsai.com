@@ -52,7 +52,7 @@ module.exports = {
 					{
 						resolve: `gatsby-remark-vscode`,
 						options: {
-							theme: "Dark+",
+							theme: "Dark+ (default dark)",
 						},
 					},
 					{
