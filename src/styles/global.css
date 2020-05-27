@@ -25,6 +25,7 @@ body {
 
 a {
 	color: var(--secondary-text);
+	font-weight: bold;
 }
 
 a:hover:not(.no-invert) {
