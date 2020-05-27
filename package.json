@@ -2,7 +2,7 @@
 	"name": "raghavsai.com",
 	"private": true,
 	"description": "Raghav Sai's personal site-portfolio-blog.",
-	"version": "0.9.0",
+	"version": "1.0.0",
 	"author": "Raghav Sai <g.raghav.sai@gmail.com>",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.28",

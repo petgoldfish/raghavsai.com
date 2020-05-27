@@ -5,6 +5,8 @@
 	max-width: 768px;
 	display: flex;
 	flex-direction: column;
+	padding-left: var(--space);
+	padding-right: var(--space);
 }
 
 .header {
