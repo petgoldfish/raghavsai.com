@@ -10,6 +10,7 @@ import {
 
 import { BioQuery } from "../../../graphql-types";
 import "./bio.css";
+import Social from "../social/social";
 
 const Bio = () => {
 	const data: BioQuery = useStaticQuery(graphql`
@@ -27,17 +28,12 @@ const Bio = () => {
 						name
 						fullName
 					}
-					social {
-						github
-						twitter
-						linkedIn
-					}
 				}
 			}
 		}
 	`);
 
-	const { author, social } = data.site.siteMetadata;
+	const { author } = data.site.siteMetadata;
 
 	return (
 		<div className="bio">
@@ -49,27 +45,7 @@ const Bio = () => {
 			<div className="bio__content">
 				<p>
 					<strong>{author.name}</strong> loves software development, playing
-					video games, and traveling the world. Find him on:{" "}
-					<big>
-						<a
-							className="bio__social no-invert"
-							href={`https://www.github.com/${social.github}`}
-						>
-							<FontAwesomeIcon icon={faGithub} />
-						</a>{" "}
-						<a
-							className="bio__social no-invert"
-							href={`https://www.linkedin.com/in/${social.linkedIn}`}
-						>
-							<FontAwesomeIcon icon={faLinkedin} />
-						</a>{" "}
-						<a
-							className="bio__social no-invert"
-							href={`https://www.twitter.com/${social.twitter}`}
-						>
-							<FontAwesomeIcon icon={faTwitter} />
-						</a>
-					</big>
+					video games, and traveling the world. Find him on: <Social />
 				</p>
 			</div>
 		</div>

@@ -2823,7 +2823,7 @@ export type StringQueryOperatorInput = {
 export type BioQueryVariables = {};
 
 
-export type BioQuery = { avatar?: Maybe<{ childImageSharp?: Maybe<{ fixed?: Maybe<GatsbyImageSharpFixedFragment> }> }>, site?: Maybe<{ siteMetadata?: Maybe<{ author?: Maybe<Pick<SiteSiteMetadataAuthor, 'name' | 'fullName'>>, social?: Maybe<Pick<SiteSiteMetadataSocial, 'github' | 'twitter' | 'linkedIn'>> }> }> };
+export type BioQuery = { avatar?: Maybe<{ childImageSharp?: Maybe<{ fixed?: Maybe<GatsbyImageSharpFixedFragment> }> }>, site?: Maybe<{ siteMetadata?: Maybe<{ author?: Maybe<Pick<SiteSiteMetadataAuthor, 'name' | 'fullName'>> }> }> };
 
 export type LayoutQueryVariables = {};
 
@@ -2838,6 +2838,11 @@ export type SeoQuery = { site?: Maybe<{ siteMetadata?: Maybe<(
       & { author?: Maybe<Pick<SiteSiteMetadataAuthor, 'fullName'>> }
     )> }> };
 
+export type SocialQueryVariables = {};
+
+
+export type SocialQuery = { site?: Maybe<{ siteMetadata?: Maybe<{ social?: Maybe<Pick<SiteSiteMetadataSocial, 'github' | 'twitter' | 'linkedIn'>> }> }> };
+
 export type BlogPageQueryVariables = {};
 
 
@@ -2845,11 +2850,6 @@ export type BlogPageQuery = { allMdx: { edges: Array<{ node: (
         Pick<Mdx, 'excerpt'>
         & { fields?: Maybe<Pick<MdxFields, 'slug'>>, frontmatter?: Maybe<Pick<MdxFrontmatter, 'date' | 'title' | 'description'>> }
       ) }> } };
-
-export type IndexQueryVariables = {};
-
-
-export type IndexQuery = { site?: Maybe<{ siteMetadata?: Maybe<{ social?: Maybe<Pick<SiteSiteMetadataSocial, 'github'>> }> }> };
 
 export type BlogPostBySlugQueryVariables = {
   slug: Scalars['String'];
