@@ -35,7 +35,7 @@ export default function Social() {
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<FontAwesomeIcon icon={faGithub} width={18} />
+				<FontAwesomeIcon title="Github" icon={faGithub} width={18} />
 			</a>{" "}
 			<a
 				className="social-link no-invert"
@@ -43,7 +43,7 @@ export default function Social() {
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<FontAwesomeIcon icon={faLinkedin} width={18} />
+				<FontAwesomeIcon title="LinkedIn" icon={faLinkedin} width={18} />
 			</a>{" "}
 			<a
 				className="social-link no-invert"
@@ -51,7 +51,7 @@ export default function Social() {
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<FontAwesomeIcon icon={faTwitter} width={18} />
+				<FontAwesomeIcon title="Twitter" icon={faTwitter} width={18} />
 			</a>
 		</big>
 	);
