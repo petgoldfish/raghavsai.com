@@ -26,8 +26,8 @@ function BlogPostTemplate({ data }: BlogPostTemplateProps) {
 				<p>{post.frontmatter.date}</p>
 			</div>
 			<MDXRenderer>{post.body}</MDXRenderer>
-			<Bio />
 			<hr />
+			<Bio />
 			<Link to="/blog/">← All Posts</Link>
 		</Layout>
 	);
