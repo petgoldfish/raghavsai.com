@@ -4,13 +4,14 @@ html {
 	--secondary-text: #01a7c2;
 	--divider-color: #a3bac3;
 	--secondary: #eaebed;
+	--space-s: 8px;
 	--space: 16px;
 	--space-l: 32px;
 	font-family: "Roboto Mono";
 	background-color: var(--secondary);
 	color: var(--primary-text);
 
-	/* CSS
+	/* Site colours
 	--color1: #eaebedff;
 	--color2: #006989ff;
 	--color3: #a3bac3ff;
@@ -35,4 +36,8 @@ a:hover:not(.no-invert) {
 hr {
 	color: var(--divider-color);
 	width: 100%;
+}
+
+.footnote-backref {
+	margin-left: var(--space-s);
 }
