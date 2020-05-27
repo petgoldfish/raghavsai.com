@@ -2,8 +2,14 @@ import React, { FC } from "react";
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
+import { graphql } from "gatsby";
+import { IndexQuery } from "../../graphql-types";
 
-const IndexPage: FC = () => {
+interface IndexProps {
+	data: IndexQuery;
+}
+
+function IndexPage({ data }: IndexProps) {
 	return (
 		<Layout>
 			<SEO
@@ -29,8 +35,27 @@ const IndexPage: FC = () => {
 				Languages, I'm usually playing video games or doing outdoorsy stuff like
 				hiking and traveling the world (well, before the pandemic at least)!
 			</p>
+			<p>
+				Check out my{" "}
+				<a href={`https://github.com/${data.site.siteMetadata.social.github}`}>
+					GitHub
+				</a>
+				!
+			</p>
 		</Layout>
 	);
-};
+}
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+	query Index {
+		site {
+			siteMetadata {
+				social {
+					github
+				}
+			}
+		}
+	}
+`;

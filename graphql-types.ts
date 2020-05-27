@@ -2846,6 +2846,11 @@ export type BlogPageQuery = { allMdx: { edges: Array<{ node: (
         & { fields?: Maybe<Pick<MdxFields, 'slug'>>, frontmatter?: Maybe<Pick<MdxFrontmatter, 'date' | 'title' | 'description'>> }
       ) }> } };
 
+export type IndexQueryVariables = {};
+
+
+export type IndexQuery = { site?: Maybe<{ siteMetadata?: Maybe<{ social?: Maybe<Pick<SiteSiteMetadataSocial, 'github'>> }> }> };
+
 export type BlogPostBySlugQueryVariables = {
   slug: Scalars['String'];
 };
