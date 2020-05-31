@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
@@ -22,7 +22,7 @@ function IndexPage() {
 			<h1>Hello World!</h1>
 			<p>
 				I live in New York City, pursuing a Master's in Computer Science at NYU.
-				Before this, I was a Full Stack Software Engineer at PowerSchool in
+				Prior to this, I was a Full Stack Software Engineer at PowerSchool in
 				Bangalore, India.
 			</p>
 			<p>
