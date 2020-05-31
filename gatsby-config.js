@@ -66,5 +66,6 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-preact`,
+		`gatsby-plugin-dark-mode`,
 	],
 };

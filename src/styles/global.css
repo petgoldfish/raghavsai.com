@@ -8,8 +8,6 @@ html {
 	--space: 16px;
 	--space-l: 32px;
 	font-family: "Roboto Mono";
-	background-color: var(--secondary);
-	color: var(--primary-text);
 
 	/* Site colours
 	--color1: #eaebedff;
@@ -21,6 +19,13 @@ html {
 
 body {
 	margin: 0;
+	background-color: var(--secondary);
+	color: var(--primary-text);
+}
+
+body.dark {
+	--primary-text: #eaebed;
+	--secondary: black;
 }
 
 a {

@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 import { LayoutQuery } from "../../../graphql-types";
 
 import "./layout.css";
+import ThemeControl from "../ThemeControl/themeControl";
 
 const Layout: FC = ({ children }) => {
 	const { site }: LayoutQuery = useStaticQuery(graphql`
@@ -26,6 +27,8 @@ const Layout: FC = ({ children }) => {
 				</h1>
 				<div className="navbar">
 					<Link to="/blog/">Blog</Link>
+					<span aria-hidden="true">|</span>
+					<ThemeControl />
 				</div>
 			</header>
 			<hr />
