@@ -12,7 +12,3 @@
 .bio__content {
 	flex: 1;
 }
-
-.bio__social {
-	color: var(--brand);
-}

@@ -1,12 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Image from "gatsby-image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faGithub,
-	faLinkedin,
-	faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 
 import { BioQuery } from "../../../graphql-types";
 import "./bio.css";
