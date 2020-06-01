@@ -16,6 +16,7 @@ function IndexPage() {
 					`blog`,
 					`gatsby`,
 					`javascript`,
+					`typescript`,
 					`react`,
 				]}
 			/>
@@ -33,6 +34,7 @@ function IndexPage() {
 			<p>
 				Find me on: <Social />
 			</p>
+			<p>You can also reach me at hello (at) raghavsai (dot) com.</p>
 		</Layout>
 	);
 }
