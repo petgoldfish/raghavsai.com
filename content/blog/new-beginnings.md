@@ -12,7 +12,7 @@ Millions of people were infected and thousands of people lost their lives.[^covi
 
 I was all set to move to San Francisco this summer to be a Security Intern at NCC Group. It was devastating to hear that the internship was cancelled. I had _so many_ plans, and wanted to experience so many new things while I was supposed to be there.
 
-My New Year's resolution was to visit a new city or national park every month. I had just obtained my IDNYC[^idnyc] which allows holders to obtain annual memberships to museums and zoos across NYC. I also wanted to watch _all_ the broadway plays (using the lotteries[^broadway] of course). Well, that didn't go quite as swimmingly as I expected.
+My New Year's resolution was to visit a new city or national park every month. I had just obtained my IDNYC[^idnyc] which allows holders to obtain annual memberships to museums and zoos across NYC (among others in a slew of benefits). I also wanted to watch _all_ the broadway plays (using the lotteries[^broadway] of course). Well, that didn't go quite as swimmingly as I expected.
 
 There's no use cribbing about it though. I must take this opportunity to better myself in ways that I still can. To that end, I've begun exercising regularly, sharpening my web dev skills, and becoming more productive[^cgpgrey] with my now-empty summer schedule.
 
