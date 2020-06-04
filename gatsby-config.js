@@ -9,7 +9,7 @@ module.exports = {
 		siteUrl: `https://raghavsai.netlify.app/`,
 		social: {
 			github: `petgoldfish`,
-			linkedIn: `graghavsai`,
+			linkedIn: `raghavsai`,
 			twitter: `petgoldfish13`,
 		},
 	},
