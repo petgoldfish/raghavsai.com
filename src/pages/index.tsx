@@ -31,14 +31,18 @@ function IndexPage() {
 				Languages, I'm usually playing video games or doing outdoorsy stuff like
 				hiking and traveling the world (well, before the pandemic at least)!
 			</p>
-			<h2>Contact</h2>
 			<p>
-				<a href="/resume">Resume</a>
+				Check out my{" "}
+				<a href="/resume" target="_blank" rel="noopener noreferrer">
+					resume
+				</a>
+				!
 			</p>
+			<h2>Contact Me</h2>
+			<p>Email me at hello (at) raghavsai (dot) com.</p>
 			<p>
 				Find me on: <Social />
 			</p>
-			<p>Email me at hello (at) raghavsai (dot) com.</p>
 		</Layout>
 	);
 }
