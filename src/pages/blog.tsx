@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout/layout";
@@ -10,7 +10,7 @@ interface BlogProps {
 	data: BlogPageQuery;
 }
 
-function Blog({ data }: BlogProps) {
+function BlogPage({ data }: BlogProps) {
 	const posts = data.allMdx.edges;
 
 	return (
@@ -39,7 +39,7 @@ function Blog({ data }: BlogProps) {
 	);
 }
 
-export default Blog;
+export default BlogPage;
 
 export const pageQuery = graphql`
 	query blogPage {

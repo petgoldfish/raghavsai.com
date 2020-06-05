@@ -26,6 +26,7 @@ const Layout: FC = ({ children }) => {
 					</Link>
 				</h1>
 				<div className="navbar">
+					<Link to="/portfolio/">Portfolio</Link>
 					<Link to="/blog/">Blog</Link>
 					<span aria-hidden="true">|</span>
 					<ThemeControl />
