@@ -6,7 +6,7 @@ module.exports = {
 			fullName: `Raghav Sai`,
 		},
 		description: `Raghav Sai's personal site-portfolio-blog.`,
-		siteUrl: `https://raghavsai.netlify.app/`,
+		siteUrl: `https://www.raghavsai.com/`,
 		social: {
 			github: `petgoldfish`,
 			linkedIn: `raghavsai`,
@@ -67,5 +67,6 @@ module.exports = {
 		},
 		`gatsby-plugin-preact`,
 		`gatsby-plugin-dark-mode`,
+		`gatsby-plugin-netlify`,
 	],
 };
