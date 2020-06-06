@@ -65,6 +65,27 @@ module.exports = {
 				],
 			},
 		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Raghav Sai`,
+				short_name: `Raghav Sai`,
+				start_url: `/`,
+				background_color: `black`,
+				theme_color: `teal`,
+				display: `standalone`,
+				icon: `static/icon.png`,
+				cache_busting_mode: "none",
+			},
+		},
+		{
+			resolve: "gatsby-plugin-offline",
+			options: {
+				workboxConfig: {
+					globPatterns: ["**/*"],
+				},
+			},
+		},
 		`gatsby-plugin-preact`,
 		`gatsby-plugin-dark-mode`,
 		`gatsby-plugin-netlify`,
