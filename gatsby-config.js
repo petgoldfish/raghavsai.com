@@ -75,16 +75,7 @@ module.exports = {
 				theme_color: `teal`,
 				display: `standalone`,
 				icon: `static/icon.png`,
-				cache_busting_mode: "none",
-			},
-		},
-		{
-			resolve: "gatsby-plugin-offline",
-			options: {
-				workboxConfig: {
-					globPatterns: ["**/*"],
-					globIgnores: ["_redirects", "_headers"],
-				},
+				theme_color_in_head: false,
 			},
 		},
 		`gatsby-plugin-preact`,
