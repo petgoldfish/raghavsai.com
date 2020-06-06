@@ -39,7 +39,7 @@ function IndexPage() {
 				!
 			</p>
 			<h2>Contact Me</h2>
-			<p>Email me at contact (at) raghavsai (dot) com.</p>
+			<p>Email me at hi (at) raghavsai (dot) com.</p>
 			<p>
 				Find me on: <Social />
 			</p>
