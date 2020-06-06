@@ -75,7 +75,6 @@ module.exports = {
 				theme_color: `teal`,
 				display: `standalone`,
 				icon: `static/icon.png`,
-				theme_color_in_head: false,
 			},
 		},
 		`gatsby-plugin-preact`,
