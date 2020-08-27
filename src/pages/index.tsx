@@ -20,9 +20,9 @@ function IndexPage() {
 					`react`,
 				]}
 			/>
-			<h1>Hello World!</h1>
+			<h1>Hello, world!</h1>
 			<p>
-				I live in New York City, pursuing a Master's in Computer Science at NYU.
+				I live in New York City, and I'm pursuing a Master's in Computer Science at NYU.
 				Prior to this, I was a Full Stack Software Engineer at PowerSchool in
 				Bangalore, India.
 			</p>
@@ -34,7 +34,7 @@ function IndexPage() {
 			<p>
 				Check out my{" "}
 				<a href="/resume" target="_blank" rel="noopener noreferrer">
-					resume
+					résumé
 				</a>
 				!
 			</p>
