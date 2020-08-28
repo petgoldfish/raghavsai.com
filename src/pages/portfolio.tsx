@@ -117,7 +117,7 @@ function PortfolioPage() {
 			</article>
 			<hr />
 			<article>
-				<h2 className="project-type">OTHERS</h2>
+				<h2 className="project-type">MISC.</h2>
 				<section>
 					<h3>Chip8 Emulator</h3>
 					<h4>
