@@ -41,16 +41,15 @@ function IndexPage() {
       <h2>Contact Me</h2>
       <p>Email me at hi (at) raghavsai (dot) com.</p>
       <p>
+        Find me on: <Social />
+      </p>
+      <p>
         My{" "}
         <a href="/gpg-pubkey.txt" target="_blank" rel="noopener noreferrer">
           GPG key
         </a>{" "}
-        if you want to securely communicate with me. Fingerprint:{" "}
-        <pre>0B87F52A5DA252053ECB654A20E18C16307015FB</pre>
-      </p>
-      GPG key
-      <p>
-        Find me on: <Social />
+        [<code>0B87F52A5DA252053ECB654A20E18C16307015FB</code>] for secure
+        communication.
       </p>
     </Layout>
   );
