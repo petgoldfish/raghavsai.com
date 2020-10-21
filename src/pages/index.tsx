@@ -23,8 +23,23 @@ function IndexPage() {
       <h1>Hello, world!</h1>
       <p>
         I live in New York City, and I'm pursuing a Master's in Computer Science
-        at NYU. Prior to this, I was a Full Stack Software Engineer at
-        PowerSchool in Bangalore, India.
+        at NYU. Currently, I contribute to{" "}
+        <a
+          href="https://ssl.engineering.nyu.edu/projects#cachecash"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CacheCash
+        </a>{" "}
+        at NYU's{" "}
+        <a
+          href="https://ssl.engineering.nyu.edu/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Secure Systems Lab
+        </a>
+        .
       </p>
       <p>
         When I'm not playing around with Web Development or Programming
