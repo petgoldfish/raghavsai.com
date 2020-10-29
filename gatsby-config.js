@@ -80,5 +80,6 @@ module.exports = {
 		`gatsby-plugin-preact`,
 		`gatsby-plugin-dark-mode`,
 		`gatsby-plugin-netlify`,
+		`gatsby-plugin-no-javascript`
 	],
 };
