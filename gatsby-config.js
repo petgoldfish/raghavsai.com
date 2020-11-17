@@ -16,7 +16,6 @@ module.exports = {
 	plugins: [
 		`gatsby-plugin-netlify-cms`,
 		`gatsby-plugin-react-helmet`,
-		`gatsby-plugin-graphql-codegen`,
 		{
 			resolve: `gatsby-plugin-sharp`,
 			options: {
@@ -65,20 +64,8 @@ module.exports = {
 				],
 			},
 		},
-		{
-			resolve: `gatsby-plugin-manifest`,
-			options: {
-				name: `Raghav Sai`,
-				short_name: `Raghav Sai`,
-				start_url: `/`,
-				background_color: `black`,
-				theme_color: `teal`,
-				display: `standalone`,
-				icon: `static/icon.png`,
-			},
-		},
+		`gatsby-plugin-graphql-codegen`,
 		`gatsby-plugin-preact`,
 		`gatsby-plugin-dark-mode`,
-		`gatsby-plugin-netlify`,
 	],
 };
