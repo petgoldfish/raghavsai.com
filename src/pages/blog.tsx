@@ -23,7 +23,9 @@ function BlogPage({ data }: BlogProps) {
           return (
             <div key={node.fields.slug}>
               <h2>
-                <Link to={`${node.fields.slug}`}>{title}</Link>
+                <Link to={node.fields.slug} itemProp="url">
+                  {title}
+                </Link>
               </h2>
               <small>{node.frontmatter.date}</small>
               <p
