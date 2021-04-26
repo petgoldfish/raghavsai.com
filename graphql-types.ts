@@ -710,7 +710,6 @@ export type FileFieldsEnum =
   | 'childMdx___wordCount___paragraphs'
   | 'childMdx___wordCount___sentences'
   | 'childMdx___wordCount___words'
-  | 'childMdx___fields___slug'
   | 'childMdx___id'
   | 'childMdx___parent___id'
   | 'childMdx___parent___parent___id'
@@ -1378,7 +1377,6 @@ export type Mdx = Node & {
   tableOfContents?: Maybe<Scalars['JSON']>;
   timeToRead?: Maybe<Scalars['Int']>;
   wordCount?: Maybe<MdxWordCount>;
-  fields?: Maybe<MdxFields>;
   id: Scalars['ID'];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -1428,10 +1426,6 @@ export type MdxEdge = {
   previous?: Maybe<Mdx>;
 };
 
-export type MdxFields = {
-  slug?: Maybe<Scalars['String']>;
-};
-
 export type MdxFieldsEnum = 
   | 'rawBody'
   | 'fileAbsolutePath'
@@ -1451,7 +1445,6 @@ export type MdxFieldsEnum =
   | 'wordCount___paragraphs'
   | 'wordCount___sentences'
   | 'wordCount___words'
-  | 'fields___slug'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -1539,10 +1532,6 @@ export type MdxFieldsEnum =
   | 'internal___owner'
   | 'internal___type';
 
-export type MdxFieldsFilterInput = {
-  slug?: Maybe<StringQueryOperatorInput>;
-};
-
 export type MdxFilterInput = {
   rawBody?: Maybe<StringQueryOperatorInput>;
   fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
@@ -1555,7 +1544,6 @@ export type MdxFilterInput = {
   tableOfContents?: Maybe<JsonQueryOperatorInput>;
   timeToRead?: Maybe<IntQueryOperatorInput>;
   wordCount?: Maybe<MdxWordCountFilterInput>;
-  fields?: Maybe<MdxFieldsFilterInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -1876,7 +1864,6 @@ export type QueryMdxArgs = {
   tableOfContents?: Maybe<JsonQueryOperatorInput>;
   timeToRead?: Maybe<IntQueryOperatorInput>;
   wordCount?: Maybe<MdxWordCountFilterInput>;
-  fields?: Maybe<MdxFieldsFilterInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -2859,10 +2846,10 @@ export type SocialQuery = { site?: Maybe<{ siteMetadata?: Maybe<{ social?: Maybe
 export type BlogPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BlogPageQuery = { allMdx: { edges: Array<{ node: (
-        Pick<Mdx, 'excerpt'>
-        & { fields?: Maybe<Pick<MdxFields, 'slug'>>, frontmatter?: Maybe<Pick<MdxFrontmatter, 'date' | 'title' | 'description'>> }
-      ) }> } };
+export type BlogPageQuery = { allMdx: { nodes: Array<(
+      Pick<Mdx, 'excerpt'>
+      & { frontmatter?: Maybe<Pick<MdxFrontmatter, 'path' | 'title' | 'date' | 'description'>> }
+    )> } };
 
 export type BlogPostBySlugQueryVariables = Exact<{
   slug: Scalars['String'];
@@ -2870,6 +2857,6 @@ export type BlogPostBySlugQueryVariables = Exact<{
 
 
 export type BlogPostBySlugQuery = { mdx?: Maybe<(
-    Pick<Mdx, 'id' | 'excerpt' | 'body'>
+    Pick<Mdx, 'excerpt' | 'body'>
     & { frontmatter?: Maybe<Pick<MdxFrontmatter, 'title' | 'date' | 'description'>> }
   )> };

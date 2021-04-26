@@ -11,31 +11,32 @@ interface BlogProps {
 }
 
 function BlogPage({ data }: BlogProps) {
-  const posts = data.allMdx.edges;
+  const posts = data.allMdx.nodes;
 
   return (
     <Layout>
       <SEO title="Blog" />
       <Bio />
       <div>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          return (
-            <div key={node.fields.slug}>
-              <h2>
-                <Link to={node.fields.slug} itemProp="url">
-                  {title}
-                </Link>
-              </h2>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          );
-        })}
+        {posts.map(
+          ({ excerpt, frontmatter: { title, path, date, description } }) => {
+            return (
+              <div key={path}>
+                <h2>
+                  <Link to={`/blog/${path}`} itemProp="url">
+                    {title || path}
+                  </Link>
+                </h2>
+                <small>{date}</small>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: description || excerpt,
+                  }}
+                />
+              </div>
+            );
+          }
+        )}
       </div>
     </Layout>
   );
@@ -45,18 +46,14 @@ export default BlogPage;
 
 export const pageQuery = graphql`
   query blogPage {
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
+    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+      nodes {
+        excerpt
+        frontmatter {
+          path
+          title
+          date(formatString: "MMMM DD, YYYY")
+          description
         }
       }
     }
