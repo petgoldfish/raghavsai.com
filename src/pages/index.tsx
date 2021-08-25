@@ -23,28 +23,13 @@ function IndexPage() {
       <h1>Hello, world!</h1>
       <p>
         I live in New York City, and I'm pursuing a Master's in Computer Science
-        at NYU. Currently, I contribute to{" "}
-        <a
-          href="https://ssl.engineering.nyu.edu/projects#cachecash"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CacheCash
-        </a>{" "}
-        at NYU's{" "}
-        <a
-          href="https://ssl.engineering.nyu.edu/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Secure Systems Lab
-        </a>
-        .
+        at NYU. Currently, I work as a Site Reliability Engineer at{" "}
+        <a href="https://cadre.com">Cadre</a>.
       </p>
       <p>
         When I'm not playing around with Web Development or Programming
         Languages, I'm usually playing video games or doing outdoorsy stuff like
-        hiking and traveling the world (well, before the pandemic at least)!
+        hiking and traveling the world!
       </p>
       <p>
         Check out my{" "}
