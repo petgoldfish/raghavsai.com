@@ -1,0 +1,9 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /styles/main.css
+---
+
+{% set css %}
+{% include "main.css" %}
+{% endset %}
+{{ css | cssmin | safe }}

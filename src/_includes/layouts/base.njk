@@ -1,0 +1,36 @@
+---
+site_title: Raghav Sai
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles/main.css">
+	<title>{{ site_title }}</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="site-title">
+				<a class="site-title__link no-invert" href="/">
+					{{ site_title }}
+				</a>
+			</h1>
+			<div class="navbar">
+				<a href="/portfolio/">Portfolio</a>
+				<a href="/blog/">Blog</a>
+			</div>
+		</header>
+		<hr />
+		<main class="main">{{ content | safe }}</main>
+		<footer class="footer">
+			© 2022 Raghav Sai
+		</footer>
+	</div>
+</body>
+
+</html>

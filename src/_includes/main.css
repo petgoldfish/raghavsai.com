@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?ead3gz');
+    src: url('fonts/icomoon.eot?ead3gz#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?ead3gz') format('truetype'), url('fonts/icomoon.woff?ead3gz') format('woff'), url('fonts/icomoon.svg?ead3gz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-adjust:before {
+    content: "\f042";
+}
+
+.icon-linkedin-square:before {
+    content: "\f08c";
+}
+
+.icon-github:before {
+    content: "\f09b";
+}
+
+:root {
+    --brand: teal;
+    --primary-text: darkslategray;
+    --secondary-text: #01a7c2;
+    --divider-color: #a3bac3;
+    --secondary: #ffffff;
+    --space-s: 8px;
+    --space: 16px;
+    --space-l: 32px;
+    font-family: "Roboto Mono", "Courier New", monospace;
+    /* Site colours --color1: #eaebedff; --color2: #006989ff; --color3: #a3bac3ff; --color4: #007090ff; --color5: #01a7c2ff;
+*/
+}
+
+:root.dark {
+    --primary-text: #eaebed;
+    --secondary: black;
+}
+
+body {
+    margin: 0;
+    background-color: var(--secondary);
+    color: var(--primary-text);
+}
+
+a {
+    color: var(--secondary-text);
+    font-weight: bold;
+}
+
+a:hover:not(.no-invert) {
+    text-decoration: none;
+    background-color: var(--secondary-text);
+    color: var(--secondary);
+}
+
+hr {
+    color: var(--divider-color);
+    width: 100%;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--space);
+    padding-right: var(--space);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar>* {
+    margin-left: var(--space);
+}
+
+.site-title {
+    color: var(--brand);
+    flex: 1;
+    font-size: 3.5rem;
+}
+
+.site-title__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    flex: 1;
+}
+
+.bio {
+    margin-top: var(--space);
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    margin-right: var(--space);
+    border-radius: 100%;
+    width: 50px;
+}
+
+.bio__content {
+    flex: 1;
+}
+
+.footer {
+    margin-top: var(--space);
+    margin-bottom: var(--space);
+    text-align: center;
+}
+
+.social {
+    display: inline-flex;
+    align-items: center;
+}
+
+.social__link {
+    color: var(--brand);
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-inline-start: var(--space-s);
+}
+
+.theme-toggle {
+    color: var(--primary-text);
+    transform: rotate(180deg);
+    text-decoration: none;
+    font-size: larger;
+}
+
+.all-posts-link {
+    margin-top: var(--space);
+}
+
+@media only screen and(max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+}
