@@ -3,7 +3,6 @@ layout: layouts/post.njk
 title: New Beginnings
 description: My thoughts on the pandemic
 date: 2020-05-27
-tags: blog
 ---
 The year 2020 was set to be a peaceful one for humanity. It was supposed to mark the 75th anniversary of the end of World War II,[^ww2] the 2020 Olympics,[^olympics] hindsight 2020 memes, and nothing more. However, the year got progressively worse starting with massive bushfires in Australia,[^fires] tensions between the US and Iraq,[^iraq] and eventually, the COVID-19 pandemic.
 
