@@ -96,7 +96,7 @@ hr {
     align-items: center;
 }
 
-.navbar>* {
+.navbar>a:not(:first-child) {
     margin-left: var(--space);
 }
 
@@ -160,7 +160,7 @@ hr {
     margin-top: var(--space);
 }
 
-@media only screen and(max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .header {
         flex-direction: column;
     }
