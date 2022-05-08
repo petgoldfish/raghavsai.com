@@ -5,6 +5,10 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: layouts/post.njk
+  config:
+    required: false
+  hidden: true
 - type: text
   name: title
   label: title
@@ -14,3 +18,6 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    required: true
+  default: now
