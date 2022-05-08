@@ -35,22 +35,20 @@
 
 :root {
     --brand: teal;
-    --primary-text: darkslategray;
+    --primary-text: #bbc6ce;
     --secondary-text: #01a7c2;
     --divider-color: #a3bac3;
-    --secondary: #ffffff;
+    --secondary: #11191f;
     --space-s: 8px;
     --space: 16px;
     --space-l: 32px;
     font-family: "Roboto Mono", "Courier New", monospace;
-    /* Site colours --color1: #eaebedff; --color2: #006989ff; --color3: #a3bac3ff; --color4: #007090ff; --color5: #01a7c2ff;
-*/
 }
 
-:root.dark {
+/* :root.dark {
     --primary-text: #eaebed;
     --secondary: black;
-}
+} */
 
 body {
     margin: 0;
