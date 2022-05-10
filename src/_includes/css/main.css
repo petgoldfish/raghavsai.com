@@ -45,10 +45,12 @@
     font-family: "Roboto Mono", "Courier New", monospace;
 }
 
-/* :root.dark {
-    --primary-text: #eaebed;
-    --secondary: black;
-} */
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-text: #415462;
+        --secondary: #f5f5f6;
+    }
+}
 
 body {
     margin: 0;
