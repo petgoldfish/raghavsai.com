@@ -36,7 +36,6 @@ module.exports = function (eleventyConfig) {
     // Passthrough copies
     eleventyConfig.addPassthroughCopy("src/styles/fonts/");
     eleventyConfig.addPassthroughCopy({ "src/static": "/" });
-    eleventyConfig.addPassthroughCopy({ "src/admin/config.yml": "./admin/config.yml" });
 
     // Eleventy options
     return {
