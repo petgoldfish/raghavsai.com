@@ -7,6 +7,11 @@ tags: blog
 <div className="front-matter">
     <h1>{{ title }}</h1>
     <small>{{ page.date | niceDate }}</small>
+    <div>
+        {% for tag in tags %}
+        <small><a href="/tags/{{tag}}">{{ tag }}</a></small>
+        {% endfor %}
+    </div>
 </div>
 {{ content | safe }}
 

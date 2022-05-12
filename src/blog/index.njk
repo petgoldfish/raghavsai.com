@@ -1,0 +1,11 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: Raghav Sai's Blog
+---
+
+{% include "bio.html" %}
+<h2>Posts</h2>
+{% for post in collections.blog %}
+    {% include "post_summary.html" %}
+{% endfor %}
